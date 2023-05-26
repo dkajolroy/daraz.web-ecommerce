@@ -8,7 +8,7 @@ type props = {
 };
 function Button({ title, onClick, disabled, className }: props) {
   return (
-    <div>
+    <>
       <button
         disabled={disabled || false}
         className={`focus:outline-none  ${
@@ -18,7 +18,7 @@ function Button({ title, onClick, disabled, className }: props) {
       >
         {title}
       </button>
-    </div>
+    </>
   );
 }
 
