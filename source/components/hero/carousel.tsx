@@ -19,9 +19,9 @@ function Carousel() {
         }}
         navigation={true}
         loop={true}
-        onActiveIndexChange={(e) => {
-          // console.log(data);
-        }}
+        // onActiveIndexChange={(e) => {
+        // console.log(data);
+        // }}
         modules={[Autoplay, Pagination]}
         className="relative sm:h-[200px] md:h-[340px]"
       >

@@ -8,6 +8,10 @@ interface InputUser {
   zipCode: number;
   phone: string;
 }
+interface  User{
+  name:string;
+  _id:string
+}
 
 interface InputProduct {
   brand: string;
