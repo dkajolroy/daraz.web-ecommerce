@@ -26,7 +26,7 @@ function Category({ item, subcategory }: Props) {
             (x) => x.subcategory === item._id
           );
           return (
-            <Subcategory item={item} href={"/"} childCat={childCat} key={i} />
+            <Subcategory item={item} childCat={childCat} key={i} />
           );
         })}
       </div>
