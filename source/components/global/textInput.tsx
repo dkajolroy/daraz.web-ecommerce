@@ -5,12 +5,14 @@ type props = {
   type?: React.HTMLInputTypeAttribute | undefined;
   placeholder?: string | undefined;
   className?: string | undefined;
+    onKeyUp?: React.KeyboardEventHandler<HTMLInputElement> | undefined
 };
 
-function TextInput({ onChange, type, placeholder, className }: props) {
+function TextInput({ onChange,onKeyUp, type, placeholder, className }: props) {
   return (
     <>
       <input
+          onKeyUp={onKeyUp}
         className={`focus:outline-none w-full px-2 py-1 ${
           className ? className : "bg-slate-200 text-xs border-none"
         }`}

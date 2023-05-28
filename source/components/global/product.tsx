@@ -1,9 +1,10 @@
 import { discountCalculator } from "@/source/utils/generator";
 import Image from "next/image";
+import Link from "next/link";
 
 function Product({ item }: { item: Product }) {
   return (
-    <div className="col-span-1 cursor-pointer hover:shadow-md bg-white">
+    <Link href={{pathname:"/product", query:{view:item._id}}} className="col-span-1 cursor-pointer hover:shadow-md bg-white">
       <div className="flex w-full items-center justify-between">
         <Image
           className="w-full h-full"
@@ -37,7 +38,7 @@ function Product({ item }: { item: Product }) {
           ) : null}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
