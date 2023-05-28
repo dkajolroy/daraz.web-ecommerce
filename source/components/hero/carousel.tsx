@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import { Autoplay, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { carousels } from "@/source/constant/dummy";
+import {Autoplay, Pagination} from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {carousels} from "@/source/constant/dummy";
 
 function Carousel() {
   return (
@@ -17,7 +17,6 @@ function Carousel() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        navigation={true}
         loop={true}
         // onActiveIndexChange={(e) => {
         // console.log(data);

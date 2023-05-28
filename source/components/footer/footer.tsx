@@ -66,11 +66,12 @@ function Footer() {
           </div>
           <div className="lg:col-span-4 col-span-8">
             <Image
+                priority={true}
               src={"/images/footer.jpg"}
               alt="footer"
               width={500}
               height={300}
-              className="w-auto flex-auto"
+              className="w-auto h-auto"
             />
           </div>
         </div>

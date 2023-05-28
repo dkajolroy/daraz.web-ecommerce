@@ -1,17 +1,28 @@
 import Image from "next/image";
 import Hero from "@/source/components/hero/hero";
-import Event from "@/source/components/event/event";
 import Button from "@/source/components/global/button";
 import Product from "@/source/components/global/product";
 import { allCat, featureCategory, products } from "@/source/constant/dummy";
 import FeatureCategory from "@/source/components/common/featureCategory";
 
+
 export default function Home() {
+
   return (
     <>
       <Hero />
       <div className="container ">
-        <Event />
+        {/*Event Banner*/}
+        <div className={`flex overflow-hidden rounded-b-3xl items-center md:mx-20`}>
+          <Image
+              className="w-full h-fw-full"
+              src={"/images/event.jpg"}
+              alt="event"
+              width={1280}
+              height={720}
+              priority={true}
+          />
+        </div>
         {/* Feature Categories  */}
         <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-2 my-5">
           {featureCategory.map((feature, index) => (

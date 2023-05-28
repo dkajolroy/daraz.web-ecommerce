@@ -1,11 +1,12 @@
 import "bootstrap-icons/font/bootstrap-icons.min.css";
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import {Roboto} from "next/font/google";
+import "./globals.css"
 import Provider from "@/source/provider/provider";
 import React from "react";
+
 const inter = Roboto({
   weight: "400",
-  subsets: ["latin"],
+  subsets: ["greek"],
 });
 export const metadata = {
   title: "World top selling market",
