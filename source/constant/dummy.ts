@@ -354,6 +354,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "2",
@@ -375,6 +377,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "3",
@@ -396,6 +400,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "5",
@@ -417,6 +423,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "4",
@@ -438,6 +446,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "6",
@@ -459,6 +469,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "7",
@@ -480,6 +492,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "8",
@@ -501,6 +515,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "9",
@@ -522,6 +538,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "10",
@@ -543,6 +561,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "11",
@@ -564,6 +584,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
     {
         _id: "12",
@@ -585,6 +607,8 @@ export const products: Product[] = [
         warranty: "6 month",
         createdAt: new Date(),
         updatedAt: new Date(),
+        sku: "cdcdcdc",
+        shop: "shopId"
     },
 ];
 

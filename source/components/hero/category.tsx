@@ -1,4 +1,4 @@
-import { childCategories } from "@/source/constant/dummy";
+import {childCategories} from "@/source/constant/dummy";
 import Subcategory from "./subcategory";
 
 type Props = {
@@ -20,7 +20,7 @@ function Category({ item, subcategory }: Props) {
         <i className="bi bi-caret-right"></i>
       </span>
       {/* Sub - Category */}
-      <div className="md:absolute top-0 left-full ml-5 md:ml-0 hidden group-hover/cat:block z-40 border-x bg-white md:w-[200px] w-full h-full">
+      <div className="md:absolute relative top-0 left-0 md:left-full hidden group-hover/cat:block z-40 border-x bg-white md:w-[200px] w-full h-full">
         {subcategory.map((item, i) => {
           const childCat = childCategories.filter(
             (x) => x.subcategory === item._id

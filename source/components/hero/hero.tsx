@@ -1,4 +1,4 @@
-import { categories, subCategories } from "@/source/constant/dummy";
+import {categories, subCategories} from "@/source/constant/dummy";
 import Carousel from "@/source/components/hero/carousel";
 import Category from "@/source/components/hero/category";
 
@@ -8,8 +8,7 @@ function Hero() {
       <div className="container relative">
         <div className="grid grid-cols-11 ">
           <div
-            id="menu"
-            className="xl:col-span-2 md:block hidden top-0 left-0 md:py-0 py-5 border md:border-none absolute z-30 md:relative col-span-3 w-full bg-white"
+            className="xl:col-span-2 col-span-11 md:block hidden md:py-0 py-5 border md:border-none relative md:col-span-3 w-full bg-white"
           >
             <ul>
               {categories.map((item, i) => {
