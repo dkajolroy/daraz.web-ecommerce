@@ -1,4 +1,5 @@
-// ---------->> Interface  <<------------ \\
+// ---------->> Data Interface  <<------------ \\
+
 interface InputUser {
     name: string;
     username: string;

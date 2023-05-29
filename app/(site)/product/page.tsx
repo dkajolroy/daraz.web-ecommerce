@@ -7,6 +7,7 @@ import {discountCalculator} from "@/source/utils/generator";
 import ProductCarousel from "@/source/components/global/productCarousel";
 import ImageMagnifiers from "@/app/(site)/product/imageMagnifiers";
 import Product from "@/source/components/global/product";
+import ActionThis from "@/app/(site)/product/actionThis";
 
 type Props = {
     searchParams: { view: string | undefined }
@@ -109,18 +110,8 @@ const ViewProduct = ({searchParams: {view}}: Props) => {
                                         <div className="flex">
                                             <h4>Sizes</h4>
                                         </div>
-                                        <div className="flex items-center gap-2 my-3">
-                                            <h4 className="me-2">Quantity</h4>
-                                            <Button className="px-1 bg-slate-300 text-slate-600 text-xl" title={<i className="bi bi-dash"></i>}/>
-                                            <span>1</span>
-                                            <Button className="px-1 bg-slate-300 text-slate-600 text-xl" title={<i className="bi bi-plus-lg"></i>}/>
-
-                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2">
-                                        <Button className="bg-[#26abd4] hover:opacity-90  py-2 flex-1 text-white" title="Buy Now" />
-                                        <Button className="bg-primary hover:opacity-90  py-2 flex-1 text-white" title="Add to cart" />
-                                    </div>
+                                   <ActionThis item={item}/>
 
                                 </div>
                                 {/*Col-3*/}

@@ -5,6 +5,7 @@ import SearchInput from "@/source/components/header/searchInput";
 import Link from "next/link";
 import MobileMenu from "@/source/components/header/mobileMenu";
 import React from "react";
+import CartItem from "@/source/components/header/cartItem";
 
 type Props={
   activeNav:{
@@ -50,9 +51,10 @@ function Navbar({activeNav,setActiveNav}:Props) {
                     alt="logo"
                 />
               </div>
-              <div className="bucket text-2xl flex px-2 justify-center md:flex-1">
+              <Link href="/cart" className="bucket cursor-pointer text-2xl relative flex px-2 justify-center md:flex-1">
                 <i className="bi bi-cart2"></i>
-              </div>
+                 <CartItem/>
+              </Link>
               <div className="flex-2  hidden md:flex h-[45px]">
                 <Image
                     className="w-auto h-auto"
@@ -67,11 +69,17 @@ function Navbar({activeNav,setActiveNav}:Props) {
         </div>
           {
               activeNav.menu?
-                  <div onMouseEnter={()=>{
-                      setActiveNav((s)=>({...s,hover:true}))
-                  }} className="md:flex hidden py-1  cursor-pointer items-center gap-2 text-slate-600">
+                  <div
+                     className="md:flex hidden py-1  cursor-pointer items-center gap-2 text-slate-600">
+                      <div
+                          onMouseEnter={()=>{
+                              setActiveNav((s)=>({...s,hover:true}))
+                          }}
+                          className="flex gap-2 items-center"
+                      >
                       <span>Category</span>
                       <i className="bi bi-caret-down flex items-center"></i>
+                      </div>
                   </div>:null
           }
       </div>
