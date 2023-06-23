@@ -8,19 +8,21 @@ export async function GET(request: Request) {
   }
 }
 
-type Input = {
-  name?: string;
-  email?: string;
-  username?: string;
-};
-
 export async function POST(request: Request) {
   try {
-    const input: Input = await request.json();
-    if (!input.name || !input.email || !input.username) {
-      return new NextResponse("Invalid credentials !");
+    const { name, email, password, username }: InputUser = await request.json();
+    if (!name || !email || !username || !password) {
+      // const newUser = prisma.user.create({
+      //   data: {
+      //     name: "Alice",
+      //     email: "alice@prisma.io",
+
+      //   },
+      // });
+
+      return new NextResponse("Invalid credentials !", { status: 401 });
     }
-    return new NextResponse(JSON.stringify(input));
+    // return new NextResponse(JSON.stringify());
   } catch (error) {
     return new NextResponse("Something went wrong");
   }
