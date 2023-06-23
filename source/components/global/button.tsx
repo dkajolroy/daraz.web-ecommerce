@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 type props = {
   onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
@@ -22,4 +22,4 @@ function Button({ title, onClick, disabled, className }: props) {
   );
 }
 
-export default Button;
+export default memo(Button);
