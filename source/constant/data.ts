@@ -51,6 +51,10 @@ export const adminSidebars = [
     href: "/admin/vendors",
   },
   {
+    title: "User",
+    href: "/admin/user",
+  },
+  {
     title: "Shop",
     href: "/admin/shop",
   },

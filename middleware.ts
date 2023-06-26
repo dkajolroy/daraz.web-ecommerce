@@ -2,6 +2,7 @@ import { NextRequestWithAuth, withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 export default withAuth(
   function middleware(req: NextRequestWithAuth) {
+    // console.log(req.nextUrl); ?callbackUrl=%2Fdashboard
     // Callback permission granted then working in config routed
     const { token } = req.nextauth; // Auth token
     const { pathname, origin } = req.nextUrl; // Requested pathname  and base URL
@@ -15,6 +16,7 @@ export default withAuth(
         return NextResponse.redirect(origin + "/");
       }
     }
+
     // Login Route protected
     if (pathname === "/login" && token?.role === "USER") {
       return NextResponse.redirect(origin + "/");

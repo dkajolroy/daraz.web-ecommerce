@@ -17,12 +17,12 @@ function CartPage() {
       ) : (
         <>
           <div className="grid md:grid-cols-6 gap-2 ">
-            <div className="flex col-span-4 bg-white flex-col p-2">
+            <div className="flex md:col-span-4 bg-white flex-col p-2">
               <div className="flex items-center justify-between">
                 <span>All product</span>
                 <Button
                   // onClick={() => dispatch(removeFromCart(item))}
-                  className="bg-orange-200 px-4 lg:w-auto w-full hover:opacity-80 text-sm py-1 text-primary rounded "
+                  className="bg-orange-200 px-4 lg:w-auto hover:opacity-80 text-sm py-1 text-primary rounded "
                   title={
                     <div className="flex font-bold items-center gap-[6px]">
                       <i className="bi bi-trash"></i>
@@ -35,7 +35,7 @@ function CartPage() {
                 <MapItems item={item} key={index} />
               ))}
             </div>
-            <div className="bg-white p-2 col-span-2">
+            <div className="bg-white p-2 md:col-span-2">
               <Calculator title="Checkout" actionType="CHECKOUT" />
             </div>
           </div>

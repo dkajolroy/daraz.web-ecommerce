@@ -19,33 +19,33 @@ function Header() {
                       title={data.user.name + " Account"}
                       className="text-xs uppercase hover:text-primary py-1 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
                     />
-                    <div className="absolute group-hover/my_account:visible invisible flex flex-col p-2  top-[25px] right-36 z-50 w-[300px] bg-white">
+                    <div className="bg-slate-200 absolute group-hover/my_account:visible invisible flex flex-col p-2  top-[25px] right-36 z-50 w-[300px] ">
                       <Link
-                        className="text-sm  hover:text-primary py-1 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
+                        className="text-sm  hover:text-primary py-2 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
                         href="/profile"
                       >
                         My Profile
                       </Link>
                       <Link
-                        className="text-sm hover:text-primary py-1 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
+                        className="text-sm hover:text-primary py-2 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
                         href="/cart"
                       >
                         Cart
                       </Link>
                       <Link
-                        className="text-sm hover:text-primary py-1 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
+                        className="text-sm hover:text-primary py-2 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
                         href="/order"
                       >
                         Order
                       </Link>
                       <Link
-                        className="text-sm hover:text-primary py-1 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
+                        className="text-sm hover:text-primary py-2 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
                         href="/wishlist"
                       >
                         Wishlist
                       </Link>
                       <Button
-                        className="text-sm text-left hover:text-primary py-1 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
+                        className="text-sm text-left hover:text-primary py-2 px-2 hover:decoration-solid hover:decoration-1 hover:underline hover:decoration-primary"
                         title="Logout"
                         onClick={() => signOut()}
                       />

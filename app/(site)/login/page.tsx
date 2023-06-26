@@ -6,7 +6,10 @@ import Link from "next/link";
 import { useState } from "react";
 
 function Page() {
-  const [formData, setFormData] = useState({ phoneOrEmail: "", password: "" });
+  const [formData, setFormData] = useState({
+    phone_Email_Username: "",
+    password: "",
+  });
   function submit() {
     signIn("credentials", { ...formData, callbackUrl: "/" });
   }
@@ -38,7 +41,7 @@ function Page() {
             <span className="text-xs text-gray-500">Phone Number or Email</span>
             <TextInput
               onChange={({ target: { value } }) =>
-                setFormData((s) => ({ ...s, phoneOrEmail: value }))
+                setFormData((s) => ({ ...s, phone_Email_Username: value }))
               }
               className="border focus:border-slate-300 text-sm py-2"
               placeholder="Please enter your phone/email"

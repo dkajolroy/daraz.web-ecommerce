@@ -2,6 +2,7 @@
 import Button from "@/source/components/global/button";
 import TextInput from "@/source/components/global/textInput";
 import { RootState } from "@/source/store/store";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
 
@@ -22,6 +23,9 @@ const Calculator = ({
 
   let vat = parseInt((5 * (price / 100)).toFixed(0));
   let shippingCost = 50;
+
+  // authentication
+  const { data } = useSession();
 
   function confirmOrder() {}
 
@@ -55,7 +59,11 @@ const Calculator = ({
         <Button
           onClick={() => {
             if (actionType === "CHECKOUT") {
-              push("/checkout");
+              if (data?.user) {
+                push("/checkout");
+              } else {
+                push("/login?callbackUrl=%2Fcheckout");
+              }
             } else {
               confirmOrder();
             }

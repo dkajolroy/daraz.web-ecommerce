@@ -5,7 +5,7 @@ import Button from "../components/global/button";
 import TextInput from "../components/global/textInput";
 
 function AdminLogin() {
-  const [data, setData] = useState({ username: "", password: "" });
+  const [data, setData] = useState({ phone_Email_Username: "", password: "" });
 
   function submit() {
     signIn("credentials", data);
@@ -18,7 +18,7 @@ function AdminLogin() {
         <div className="my-2">
           <TextInput
             onChange={(e) =>
-              setData((s) => ({ ...s, username: e.target.value }))
+              setData((s) => ({ ...s, phone_Email_Username: e.target.value }))
             }
             className="my-1 py-1 bg-slate-100 text-sm focus:border-slate-400 border transition"
             placeholder="Enter Username"
